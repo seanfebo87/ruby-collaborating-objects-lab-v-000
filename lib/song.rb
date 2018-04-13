@@ -6,6 +6,6 @@ class Song
   
   def self.new_by_filename(filename)
     name = filename.split(" - ")
-    song = Song.new(name)
+    song = Song.new(name[1])
   end
 end
